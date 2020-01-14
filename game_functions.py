@@ -33,12 +33,11 @@ def check_events(ai_settings, screen, ship, bullets):
 
 def update_screen(ai_settings, screen, ship, bullets):
     """Update images on the screen and flip to the new screen."""
-    # Redraw all bullets behding ship and aliens.
-    for bullet in bullets.sprites(): #returns a list of all sprites in the group bullets
-        bullet.draw_bullet()
     # Redraw the screen during each pss through the loop.
     screen.fill(ai_settings.bg_color) #method fills screen with the argument of color
     ship.blitme()
-
+    # Redraw all bullets behding ship and aliens.
+    for bullet in bullets.sprites(): #returns a list of all sprites in the group bullets
+        bullet.draw_bullet()
     # Make the most recently drawn screen visiable.
     pygame.display.flip()
