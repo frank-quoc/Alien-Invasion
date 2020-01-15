@@ -5,7 +5,7 @@ from ship import Ship
 import game_functions as gf
 
 def run_game():
-    """Initilize pygame, settings, and screen object."""
+    """Initialize pygame, settings, and screen object."""
     pygame.init() #initializes the background settings for Pygame
     ai_settings = Settings()
     screen = pygame.display.set_mode(
@@ -21,7 +21,7 @@ def run_game():
     while True: #game is controlled by this while loop and contains event loops
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update() #update calls for each sprite in the group
+        gf.update_bullets(bullets)
         gf.update_screen(ai_settings, screen, ship, bullets)
 
 run_game()
