@@ -26,11 +26,11 @@ Python 3.7.3
 Python requests library 
 ```
 
-### Installation on Linux
+### Installation
 
 **Alien Invasion Game**
 
-Enter the following into your terminal and `cd` into the repository.
+Enter the following into a Linux terminal and `cd` into the repository.
 
 ```
 git clone https://github.com/frank-quoc/Alien-Invasion.git
@@ -115,4 +115,5 @@ ship.py | Player's ship and attributes
 ## Credits
 
 Made by Frank Ho | [@frank_quoc](https://twitter.com/frank_quoc)
+
 Originally created by [Eric Matthes](https://github.com/ehmatthes/pcc/tree/master/chapter_12)
