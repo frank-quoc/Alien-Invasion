@@ -23,7 +23,7 @@ You will need to install the following:
 
 ```
 Python 3.7.3
-Python requests library 
+Pygame
 ```
 
 ### Installation
